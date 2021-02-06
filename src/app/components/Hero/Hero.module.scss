@@ -1,0 +1,33 @@
+@import "/src/config";
+
+.hero {
+  width: 100vw;
+  position: relative;
+  height: 70vh;
+}
+.txt {
+  @include container;
+}
+.bg {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  filter: blur(3px);
+  filter: brightness(60%);
+}
+.caption {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  color: $clr-white;
+  opacity: 0.6;
+}
+.quote {
+  position: absolute;
+  font-size: 8rem;
+  font-weight: 800;
+  top: 50%;
+  left: 50%;
+  color: $clr-white;
+  transform: translate(-50%, -50%);
+}

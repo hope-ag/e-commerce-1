@@ -1,0 +1,75 @@
+@import "/src/config";
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: $clr-primary-10;
+  position: relative;
+}
+.navbar {
+  @include flex-row;
+  justify-content: space-evenly;
+  margin-left: auto;
+  transition: opacity 0s;
+  & a {
+    padding: 0 1rem;
+    color: $clr-grey-5;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    @include tablet {
+      display: block;
+      padding: 2rem 1rem;
+      font-size: 1.6rem;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  @include tablet {
+    @include flex-col;
+    position: absolute;
+    z-index: 90;
+    transform: translateX(100%);
+    opacity: 0;
+    color: $clr-grey-5;
+    background-color: $clr-primary-10;
+    @include transition-medium;
+    width: 100%;
+    height: auto;
+    top: 60px;
+    font-weight: bold;
+    &.visible {
+      transform: translate(0, -5px);
+      left: 0;
+      opacity: 1;
+    }
+  }
+}
+.container {
+  @include flex-row;
+  justify-content: space-between;
+  align-items: center;
+
+  @include container;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+  background-color: $clr-grey-6;
+  color: $clr-white;
+  border-radius: 50%;
+  @include flex-row;
+  justify-content: center;
+}
+.hamburger {
+  @include flex-row;
+  height: 4rem;
+  width: 5rem;
+  & svg {
+    fill: $clr-grey-5;
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+    @include tablet {
+      display: inline;
+    }
+  }
+}
