@@ -3,7 +3,6 @@
   width: 100%;
   height: 60px;
   background-color: $clr-primary-10;
-  position: relative;
 }
 .navbar {
   @include flex-row;
@@ -15,31 +14,36 @@
     color: $clr-grey-5;
     text-transform: uppercase;
     font-size: 1.2rem;
+    font-weight: bold;
     @include tablet {
       display: block;
-      padding: 2rem 1rem;
+      padding: 2.2rem 0;
       font-size: 1.6rem;
       width: 100%;
+
       text-align: center;
+      &:hover,
+      &:active {
+        background: lighten($clr-primary-10, 50%);
+      }
     }
   }
   @include tablet {
-    @include flex-col;
     position: absolute;
     z-index: 90;
-    transform: translateX(100%);
+    left: -100%;
     opacity: 0;
     color: $clr-grey-5;
     background-color: $clr-primary-10;
-    @include transition-medium;
     width: 100%;
-    height: auto;
+    height: 100vh;
     top: 60px;
     font-weight: bold;
     &.visible {
-      transform: translate(0, -5px);
-      left: 0;
       opacity: 1;
+      @include flex-col;
+      @include transition-medium;
+      left: 0;
     }
   }
 }
@@ -61,8 +65,12 @@
 }
 .hamburger {
   @include flex-row;
+  justify-content: center;
   height: 4rem;
   width: 5rem;
+  @include transition-medium;
+  transform: rotate(0);
+  transform-origin: center;
   & svg {
     fill: $clr-grey-5;
     font-size: 3rem;
@@ -71,5 +79,8 @@
     @include tablet {
       display: inline;
     }
+  }
+  &.clicked {
+    transform: rotate(180deg);
   }
 }

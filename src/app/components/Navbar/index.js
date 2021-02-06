@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { GrClose } from "react-icons/gr";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import style from "./Navbar.module.scss";
 
 function Navbar(props) {
@@ -15,17 +16,20 @@ function Navbar(props) {
           <h3>LOGO</h3>
         </div>
         <nav className={`${style.navbar} ${clicked && style.visible}`}>
-          <a href="#">ONE</a>
-          <a href="#">TWO</a>
-          <a href="#">THREE</a>
-          <a href="#">FOUR</a>
-          <a href="#">FIVE</a>
-          <a href="#">SIX</a>
-          <a href="#">SEVEN</a>
-          <a href="#">EIGHT</a>
+          <a href="/">ONE</a>
+          <a href="/">TWO</a>
+          <a href="/">THREE</a>
+          <a href="/">FOUR</a>
+          <a href="/">FIVE</a>
+          <a href="/">SIX</a>
+          <a href="/">SEVEN</a>
+          <a href="/">EIGHT</a>
         </nav>
-        <span className={style.hamburger} onClick={handleClick}>
-          {clicked ? <FaTimes /> : <FaBars />}
+        <span
+          className={`${style.hamburger} ${clicked && style.clicked} `}
+          onClick={handleClick}
+        >
+          {clicked ? <GrClose /> : <HiOutlineMenuAlt3 />}
         </span>
       </div>
     </div>

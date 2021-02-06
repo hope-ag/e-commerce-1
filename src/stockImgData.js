@@ -2,7 +2,7 @@ export const imgData = [
   {
     id: 1,
     title: "persons chatting with family members on phone",
-    quote: "Stay connected with the ones you love",
+    quote: "Stay connected with loved ones",
     attr: "Photo by Andrea Piacquadio from Pexels",
     path: "/img/stock/pexels-andrea-piacquadio-4867670.jpg",
   },
@@ -16,14 +16,14 @@ export const imgData = [
   {
     id: 3,
     title: "woman chatting on phone",
-    quote: "Distance doesnt matter when you're connected",
+    quote: "Distance doesnt matter when connected",
     attr: "Photo by cottonbro from Pexels",
     path: "/img/stock/pexels-cottonbro-4046303.jpg",
   },
   {
     id: 4,
     title: "girl learning on phone",
-    quote: "Work, learn, play. All in one place",
+    quote: "Work & play. All in one place",
     attr: "Photo by Andrea Piacquadio from Pexels",
     path: "/img/stock/pexels-andrea-piacquadio-3768166.jpg",
   },
