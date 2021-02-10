@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { GrClose } from "react-icons/gr";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import style from "./Navbar.module.scss";
@@ -13,17 +14,20 @@ function Navbar(props) {
     <div className={style.header}>
       <div className={style.container}>
         <div className={style.logo}>
-          <h3>LOGO</h3>
+          <Link to='/'>
+            <h1>LOGO</h1>
+          </Link>
         </div>
         <nav className={`${style.navbar} ${clicked && style.visible}`}>
-          <a href="/">ONE</a>
-          <a href="/">TWO</a>
-          <a href="/">THREE</a>
-          <a href="/">FOUR</a>
-          <a href="/">FIVE</a>
-          <a href="/">SIX</a>
-          <a href="/">SEVEN</a>
-          <a href="/">EIGHT</a>
+          <Link to='#shop'>Shop</Link>
+          <Link to='/cart'>Cart</Link>
+          <Link to='/account'>Account</Link>
+          <Link to='/admin'>Admin</Link>
+          <Link to='/'>Contact Us</Link>
+
+          <button className={style.btn}>
+            <Link to='/login'>Log In</Link>
+          </button>
         </nav>
         <span
           className={`${style.hamburger} ${clicked && style.clicked} `}

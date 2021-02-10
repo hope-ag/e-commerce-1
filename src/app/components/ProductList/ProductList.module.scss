@@ -1,0 +1,39 @@
+@import "../../../config";
+
+.shop {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  background: linear-gradient(rgba(#2292ff, 0.1), rgba(#22ddff, 0.2));
+}
+.container {
+  @include container;
+  height: auto;
+
+  //   left: 50%;
+  //   background-color: $clr-grey-10;
+  //   transform: translateY(-2rem);
+  padding: 2rem 1rem;
+  z-index: 200;
+}
+.heading {
+  width: 100%;
+  margin-top: 2rem;
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+.underline {
+  margin: 1rem auto 2rem;
+  width: 10rem;
+  height: 0.8rem;
+  border-radius: 2rem;
+  background-color: $clr-primary-7;
+}
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  grid-gap: 1.4rem;
+}

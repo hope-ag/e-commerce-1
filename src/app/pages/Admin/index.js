@@ -1,6 +1,7 @@
 import React from "react";
+import styles from "./Admin.module.scss";
 
-function AdminPage() {
+function Admin() {
   return (
     <div>
       <h1>Welcome, Admin</h1>
@@ -8,4 +9,4 @@ function AdminPage() {
   );
 }
 
-export default AdminPage;
+export default Admin;

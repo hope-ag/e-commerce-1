@@ -13,8 +13,9 @@ function Hero() {
         showThumbs={false}
         autoPlay={true}
         infiniteLoop={true}
-        interval={8000}
-        transitionTime={500}
+        interval={10000}
+        transitionTime={300}
+        stopOnHover={false}
         // onChange={onChange}
         // onClickItem={onClickItem}
         // onClickThumb={onClickThumb}

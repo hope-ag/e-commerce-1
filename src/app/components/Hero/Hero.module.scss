@@ -32,6 +32,9 @@
     right: 0.8rem;
     top: 0.5rem;
   }
+  @include tiny {
+    font-size: 0.8rem;
+  }
 }
 .quote {
   position: absolute;

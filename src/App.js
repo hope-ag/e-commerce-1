@@ -1,26 +1,30 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LandingPage from "./app/pages/LandingPage";
 import CartPage from "./app/pages/CartPage";
-import AdminPage from "./app/pages/AdminPage";
+import Account from "./app/pages/Account";
+import Admin from "./app/pages/Admin";
 import NotFound from "./app/pages/404";
 import "./App.global.scss";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className='App'>
         <Switch>
-          <Route exact path="/">
+          <Route exact path='/'>
             <LandingPage />
           </Route>
-          <Route exact path="/admin">
-            <AdminPage />
+          <Route path='/admin'>
+            <Admin />
           </Route>
-          <Route exact path="/cart">
+          <Route path='/cart'>
             <CartPage />
           </Route>
-          <Route exact path="/">
+          <Route path='/account'>
+            <Account />
+          </Route>
+          <Route path='/'>
             <NotFound />
           </Route>
         </Switch>

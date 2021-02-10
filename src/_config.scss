@@ -17,9 +17,9 @@ $clr-grey-2: hsl(211, 39%, 23%);
 $clr-grey-3: hsl(209, 34%, 30%);
 $clr-grey-4: hsl(209, 28%, 39%);
 /* grey used for paragraphs */
-$clr-grey-5: hsl(210, 22%, 49%);
+$clr-grey-5: hsl(210, 22%, 35%);
 $clr-grey-6: hsl(209, 23%, 60%);
-$clr-grey-7: hsl(211, 27%, 70%);
+$clr-grey-7: hsl(209, 23%, 54%);
 $clr-grey-8: hsl(210, 31%, 80%);
 $clr-grey-9: hsl(212, 33%, 89%);
 $clr-grey-10: hsl(210, 36%, 96%);
@@ -32,7 +32,7 @@ $clr-black: #333;
 $spacing: 0.1rem;
 $radius: 0.25rem;
 $light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-$dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+$dark-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.12);
 $fixed-width: 620px;
 $font-size: 1.4rem;
 

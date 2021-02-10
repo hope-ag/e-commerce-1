@@ -1,0 +1,67 @@
+@import "/src/config";
+.container {
+  @include flex-col;
+  align-items: center;
+  border-radius: 1rem;
+  justify-content: center;
+  background-color: $clr-white;
+  height: auto;
+  box-shadow: $dark-shadow;
+  @include transition-medium;
+  &:hover {
+    transform: translateY(-1.5rem);
+    box-shadow: 1px 3px 9px 0 rgba(0, 0, 0, 0.14);
+  }
+}
+
+.img {
+  position: relative;
+  & img {
+    height: 95%;
+    padding-bottom: 1.2rem;
+    width: 100%;
+  }
+  & h3 {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.3rem;
+    // position: absolute;
+    bottom: 0;
+    left: 0;
+    color: $clr-primary-7;
+  }
+}
+.price {
+  @include flex-row;
+  justify-content: space-evenly;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem 0;
+  align-items: center;
+  color: $clr-grey-6;
+}
+.btn {
+  width: 60%;
+  height: 40px;
+  border-radius: 5rem;
+  outline: none;
+  border: none;
+  background-color: $clr-primary-7;
+  color: $clr-white;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.link {
+  color: $clr-primary-7;
+  padding: 0.85rem;
+  border: 1px solid $clr-primary-6;
+  font-weight: bold;
+  border-radius: 5rem;
+  margin: 1rem auto;
+  &:hover {
+    background-color: $clr-primary-6;
+    color: $clr-white;
+  }
+}
