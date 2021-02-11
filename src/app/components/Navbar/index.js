@@ -19,7 +19,7 @@ function Navbar(props) {
           </Link>
         </div>
         <nav className={`${style.navbar} ${clicked && style.visible}`}>
-          <Link to='#shop'>Shop</Link>
+          <a href='/#shop'>Shop</a>
           <Link to='/cart'>Cart</Link>
           <Link to='/account'>Account</Link>
           <Link to='/admin'>Admin</Link>

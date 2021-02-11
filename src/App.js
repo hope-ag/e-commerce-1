@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LandingPage from "./app/pages/LandingPage";
+import NavBar from "./app/components/Navbar";
 import CartPage from "./app/pages/CartPage";
 import Account from "./app/pages/Account";
 import Admin from "./app/pages/Admin";
@@ -11,6 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className='App'>
+        <NavBar />
         <Switch>
           <Route exact path='/'>
             <LandingPage />

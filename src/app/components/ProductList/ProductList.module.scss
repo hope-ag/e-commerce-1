@@ -4,7 +4,7 @@
   position: relative;
   width: 100%;
   overflow-x: hidden;
-  background: linear-gradient(rgba(#2292ff, 0.1), rgba(#22ddff, 0.2));
+  background: $clr-grey-9;
 }
 .container {
   @include container;
@@ -34,6 +34,12 @@
 }
 .items {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-gap: 1.4rem;
+  @include mobile {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+  @include tiny {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
 }

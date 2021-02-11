@@ -1,4 +1,5 @@
 import React from "react";
+import { HiOutlineShoppingCart } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import styles from "./SingleProduct.module.scss";
 function SingleProduct(props) {
@@ -16,7 +17,10 @@ function SingleProduct(props) {
           From: <strong>{props.company}</strong>
         </p>
       </div>
-      <button className={styles.btn}>Add to cart</button>
+      <button className={styles.btn}>
+        <HiOutlineShoppingCart className={styles.cart} />
+        <span> Add to cart</span>
+      </button>
       <Link className={styles.link} to='#'>
         More Info
       </Link>

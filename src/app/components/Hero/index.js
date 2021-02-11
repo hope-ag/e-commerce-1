@@ -3,7 +3,6 @@ import { imgData } from "../../../stockImgData";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import style from "./Hero.module.scss";
-console.log(imgData);
 function Hero() {
   return (
     <div className={style.hero}>

@@ -37,6 +37,38 @@ function ProductList() {
           })}
         </div>
       </section>
+
+      <div className={styles.heading}>
+        <h1>Top Picks</h1>
+        <div className={styles.underline}></div>
+      </div>
+      <section className={styles.container}>
+        <div className={styles.items}>
+          {data.map((item) => {
+            const {
+              description,
+              title,
+              img,
+              price,
+              id,
+              company,
+              inCart,
+              count,
+              total,
+              info,
+            } = item;
+            return (
+              <SingleProduct
+                title={title}
+                img={img}
+                price={price}
+                company={company}
+                key={id}
+              />
+            );
+          })}
+        </div>
+      </section>
     </div>
   );
 }
